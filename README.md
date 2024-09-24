@@ -139,9 +139,10 @@ While you could simply paste the token directly into the bot script, that would 
     ```plaintext
     node_modules
     src/data/vars.json
+    dist/*
     ```
 
-This ensures that if you set up Git, your `vars.json` file will not be at risk of being uploaded.
+This ensures that if you set up Git, your `vars.json` file will not be at risk of being uploaded, nor will any builds of your program.
 
 ### Authenticating with Discord
 
@@ -196,7 +197,7 @@ There are links to further guides in the **Welcome** section that will likely he
 
 ### Building
 
-If you want to build the bot to JavaScript, run `tsc` in your terminal. If it doesn't work, try restarting VSCode.
+If you want to build the bot to JavaScript, run `npm run build` in your terminal. If it doesn't work, try restarting VSCode.
 
 If you get the specific error that the command "cannot be loaded because running scripts is disabled on this system," then try the following:
 
